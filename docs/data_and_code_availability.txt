@@ -1,6 +1,6 @@
 Data and Code Availability
 
-This study uses standard public benchmark datasets and derived compact dense subsets constructed from those public assets. The submission package includes the manuscript source, figure files, aggregate result tables, per-seed summary tables, figure-generation inputs, and scripts used to aggregate results and generate figures.
+This study uses standard public benchmark datasets and derived compact dense subsets constructed from those public assets. The reviewer-facing repository includes figure files, aggregate result tables, per-seed summary tables, figure-generation inputs, and scripts used to aggregate results and generate figures.
 
 The replication materials are available in the reviewer-facing GitHub repository:
 
