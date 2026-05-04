@@ -1,0 +1,10 @@
+{
+  "dataset": "AmazonBooksDense_full_u8000_i500_h10",
+  "package_directory": "results/breadth_amazon_u8000_i500_neumf_eval177",
+  "included_files": [
+    "aggregate.csv",
+    "aggregate.json",
+    "per_seed.csv",
+    "table2_group_gap.csv"
+  ]
+}

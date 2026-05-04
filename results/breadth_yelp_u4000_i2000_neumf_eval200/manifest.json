@@ -1,0 +1,9 @@
+{
+  "dataset": "YelpDense_u4000_i2000",
+  "package_directory": "results/breadth_yelp_u4000_i2000_neumf_eval200",
+  "included_files": [
+    "aggregate.csv",
+    "aggregate.json",
+    "per_seed.csv"
+  ]
+}

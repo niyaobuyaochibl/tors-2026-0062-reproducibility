@@ -1,0 +1,16 @@
+{
+  "dataset": "ML1M",
+  "package_directory": "results/main_mlp_ml1m_eval200",
+  "included_files": [
+    "per_seed_group.csv",
+    "per_seed_overall.csv",
+    "table1_overall.csv",
+    "table1_overall.md",
+    "table1_overall_numeric.csv",
+    "table2_group_gap.csv",
+    "table2_group_gap.md",
+    "table2_groupwise.csv",
+    "table2_groupwise.md",
+    "table2_groupwise_numeric.csv"
+  ]
+}

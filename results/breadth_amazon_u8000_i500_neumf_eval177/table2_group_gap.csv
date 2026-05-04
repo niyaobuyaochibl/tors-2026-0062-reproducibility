@@ -1,0 +1,7 @@
+dataset,explainer,Gap Validity (niche-mainstream),Gap CF-PCE (niche-mainstream),Gap SPS (niche-mainstream),Gap No-CF-found (niche-mainstream)
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,grad_input_base,-0.1635,0.0401,0.0903,0.1635
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,grad_input_vapc,-0.1635,0.0344,0.0596,0.1635
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,loo_base,-0.1598,0.0351,0.0788,0.1598
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,loo_vapc,-0.1598,0.0262,0.0537,0.1598
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,lxr_base,-0.089,0.0421,0.0588,0.089
+AmazonBooksDense_full_u8000_i500_h10_NeuMF,lxr_vapc,-0.089,0.0536,0.055,0.089

@@ -1,0 +1,19 @@
+{
+  "dataset": "Amazon-MC-Shapley",
+  "package_directory": "results/breadth_amazon_u8000_i500_neumf_mc_shapley_eval177",
+  "included_files": [
+    "aggregate.csv",
+    "aggregate.json",
+    "per_seed.csv",
+    "per_seed_group.csv",
+    "per_seed_overall.csv",
+    "table1_overall.csv",
+    "table1_overall.md",
+    "table1_overall_numeric.csv",
+    "table2_group_gap.csv",
+    "table2_group_gap.md",
+    "table2_groupwise.csv",
+    "table2_groupwise.md",
+    "table2_groupwise_numeric.csv"
+  ]
+}

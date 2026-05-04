@@ -1,0 +1,9 @@
+dataset,explainer,Gap Validity (niche-mainstream),Gap CF-PCE (niche-mainstream),Gap SPS (niche-mainstream),Gap No-CF-found (niche-mainstream)
+Amazon-M20S10,grad_input_base,-0.15,0.0232,0.0562,0.15
+Amazon-M20S10,grad_input_vapc,-0.15,0.0225,0.0408,0.15
+Amazon-M20S10,loo_base,-0.1499,0.019,0.0499,0.1499
+Amazon-M20S10,loo_vapc,-0.1499,0.0183,0.0361,0.1499
+Amazon-M20S10,lxr_base,-0.094,0.0218,0.0359,0.094
+Amazon-M20S10,lxr_vapc,-0.094,0.0256,0.0313,0.094
+Amazon-M20S10,mc_shapley_base,-0.1636,0.019,0.0677,0.1636
+Amazon-M20S10,mc_shapley_vapc,-0.1636,0.0123,0.0242,0.1636

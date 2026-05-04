@@ -1,0 +1,9 @@
+dataset,explainer,Gap Validity (niche-mainstream),Gap CF-PCE (niche-mainstream),Gap SPS (niche-mainstream),Gap No-CF-found (niche-mainstream)
+ML1M-M20S10,grad_input_base,-0.1066,-0.0711,-0.1139,0.1066
+ML1M-M20S10,grad_input_vapc,-0.1066,-0.0727,-0.1024,0.1066
+ML1M-M20S10,loo_base,-0.1066,-0.0699,-0.1141,0.1066
+ML1M-M20S10,loo_vapc,-0.1066,-0.0723,-0.1029,0.1066
+ML1M-M20S10,lxr_base,-0.1386,-0.0367,-0.0409,0.1386
+ML1M-M20S10,lxr_vapc,-0.1386,-0.0339,-0.032,0.1386
+ML1M-M20S10,mc_shapley_base,-0.1196,-0.0807,-0.1328,0.1196
+ML1M-M20S10,mc_shapley_vapc,-0.1196,-0.0678,-0.1123,0.1196

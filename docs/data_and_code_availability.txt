@@ -1,0 +1,21 @@
+Data and Code Availability
+
+This study uses standard public benchmark datasets and derived compact dense subsets constructed from those public assets. The submission package includes the manuscript source, figure files, aggregate result tables, per-seed summary tables, figure-generation inputs, and scripts used to aggregate results and generate figures.
+
+The replication materials are organized under:
+
+paper/tors-submission-package/replication/
+
+The package includes:
+
+- aggregate CSV/JSON summaries for the main MLP benchmark tables;
+- aggregate CSV/JSON summaries for VAPC repair tables;
+- aggregate CSV/JSON summaries and group-wise gap tables for the ML1M MLP, ML1M MLP plus MC-Shapley, and ML1M NeuMF-style breadth checks;
+- aggregate CSV/JSON summaries and group-wise gap tables for the Amazon Books denser u8000/i500, Amazon Books denser u8000/i500 plus MC-Shapley, and larger Yelp dense u4000/i2000 NeuMF-style transfer checks reported in the manuscript;
+- M20/S10 candidate-pool sensitivity aggregate summaries for ML1M and Amazon Books;
+- raw global-popularity Wasserstein and mean-shift diagnostic summaries for ML1M and Amazon Books;
+- lightweight user-level figure inputs for the profile and SPS distribution plots;
+- per-seed repair trade-off inputs for the repair trade-off figure;
+- source scripts for result aggregation and figure generation.
+
+The raw ML1M, Amazon Books, and Yelp assets should be obtained from their original public sources according to their respective terms. The included package is sufficient to audit the reported aggregate tables and regenerate the manuscript figures. The full benchmark execution environment depends on the public datasets and the project training configuration described in the manuscript.

@@ -1,0 +1,10 @@
+{
+  "dataset": "vapc_ml1m",
+  "package_directory": "results/vapc_ml1m",
+  "included_files": [
+    "aggregate_vapc_effect_numeric.csv",
+    "per_seed_vapc_effect.csv",
+    "table3_vapc_effect.csv",
+    "table3_vapc_effect.md"
+  ]
+}

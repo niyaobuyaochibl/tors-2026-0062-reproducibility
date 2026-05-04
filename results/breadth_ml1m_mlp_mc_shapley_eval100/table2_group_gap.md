@@ -1,0 +1,10 @@
+| dataset | explainer | Gap Validity (niche-mainstream) | Gap CF-PCE (niche-mainstream) | Gap SPS (niche-mainstream) | Gap No-CF-found (niche-mainstream) |
+| --- | --- | --- | --- | --- | --- |
+| ML1M-MC-Shapley | grad_input_base | -0.1337 | -0.0719 | -0.1099 | 0.1337 |
+| ML1M-MC-Shapley | grad_input_vapc | -0.1337 | -0.0724 | -0.0971 | 0.1337 |
+| ML1M-MC-Shapley | loo_base | -0.1337 | -0.0708 | -0.1087 | 0.1337 |
+| ML1M-MC-Shapley | loo_vapc | -0.1337 | -0.0724 | -0.0971 | 0.1337 |
+| ML1M-MC-Shapley | lxr_base | -0.1314 | -0.0176 | -0.0207 | 0.1314 |
+| ML1M-MC-Shapley | lxr_vapc | -0.1314 | -0.0167 | -0.0111 | 0.1314 |
+| ML1M-MC-Shapley | mc_shapley_base | -0.1337 | -0.0789 | -0.1256 | 0.1337 |
+| ML1M-MC-Shapley | mc_shapley_vapc | -0.1337 | -0.066 | -0.105 | 0.1337 |

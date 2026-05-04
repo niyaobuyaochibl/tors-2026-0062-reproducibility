@@ -1,0 +1,10 @@
+{
+  "dataset": "vapc_yelp_u2000_i1000",
+  "package_directory": "results/vapc_yelp_u2000_i1000",
+  "included_files": [
+    "aggregate_vapc_effect_numeric.csv",
+    "per_seed_vapc_effect.csv",
+    "table3_vapc_effect.csv",
+    "table3_vapc_effect.md"
+  ]
+}
