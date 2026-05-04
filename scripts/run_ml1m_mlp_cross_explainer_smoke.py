@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,8 +47,8 @@ from run_ml1m_mlp_lxr_smoke import (
 )
 
 
-DEFAULT_DATA_DIR = Path("/root/autodl-tmp/lxr_processed_data/ML1M")
-DEFAULT_OUTPUT_ROOT = Path("/root/autodl-tmp/cfe-popcal-runs/ml1m_mlp_cross_explainer_smoke")
+DEFAULT_DATA_DIR = Path(os.environ.get("CFE_POPCAL_ML1M_DATA_DIR", "data/ML1M"))
+DEFAULT_OUTPUT_ROOT = Path(os.environ.get("CFE_POPCAL_OUTPUT_ROOT", "outputs/ml1m_mlp_cross_explainer_smoke"))
 
 
 def parse_args() -> argparse.Namespace:

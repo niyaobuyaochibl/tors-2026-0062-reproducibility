@@ -2,12 +2,17 @@
 set -euo pipefail
 
 ENV_NAME="${ENV_NAME:-mgprompt-py310}"
-ROOT="/root/cfe-popcal-benchmark"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="${CFE_POPCAL_CODE_ROOT:-$(cd "${SCRIPT_DIR}/.." && pwd)}"
+DATA_ROOT="${CFE_POPCAL_DATA_ROOT:-data}"
+OUTPUT_ROOT="${CFE_POPCAL_OUTPUT_ROOT:-outputs}"
+ML1M_DATA_DIR="${CFE_POPCAL_ML1M_DATA_DIR:-${DATA_ROOT}/ML1M}"
+AMAZON_DATA_DIR="${CFE_POPCAL_AMAZON_DATA_DIR:-${DATA_ROOT}/amazon-books-dense-full-u8000-i500-h10}"
 
 for seed in 0 1 2; do
   conda run -n "${ENV_NAME}" python "${ROOT}/scripts/run_ml1m_mlp_cross_explainer_smoke.py" \
-    --data-dir /root/autodl-tmp/lxr_processed_data/ML1M \
-    --output-root /root/autodl-tmp/cfe-popcal-runs/ml1m_mlp_m20_s10_4explainer_eval100 \
+    --data-dir "${ML1M_DATA_DIR}" \
+    --output-root "${OUTPUT_ROOT}/ml1m_mlp_m20_s10_4explainer_eval100" \
     --dataset-label ML1M_mlp_m20_s10_eval100 \
     --train-filename train_data_ML1M.csv \
     --static-test-filename static_test_data_ML1M.csv \
@@ -34,8 +39,8 @@ done
 
 for seed in 0 1 2; do
   conda run -n "${ENV_NAME}" python "${ROOT}/scripts/run_ml1m_neumf_cross_explainer_gate.py" \
-    --data-dir /root/autodl-tmp/amazon-books-dense-full-u8000-i500-h10 \
-    --output-root /root/autodl-tmp/cfe-popcal-runs/amazon_books_dense_full_u8000_i500_h10_neumf_m20_s10_4explainer_eval177 \
+    --data-dir "${AMAZON_DATA_DIR}" \
+    --output-root "${OUTPUT_ROOT}/amazon_books_dense_full_u8000_i500_h10_neumf_m20_s10_4explainer_eval177" \
     --dataset-label AmazonBooksDense_full_u8000_i500_h10_m20_s10 \
     --train-filename train_data.csv \
     --static-test-filename static_test_data.csv \

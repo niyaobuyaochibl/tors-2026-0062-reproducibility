@@ -38,7 +38,7 @@ Full end-to-end reruns require the public source datasets and local preprocessin
 - `scripts/prepare_amazon_books_dense_subset.py`
 - `scripts/prepare_yelp_dense_subset.py`
 
-The scripts use explicit command-line arguments for data directories, seeds, candidate-pool size, and output locations. Some default paths reflect the authors' local execution environment and should be replaced by the reviewer's local dataset paths when rerunning.
+The scripts use explicit command-line arguments for data directories, seeds, candidate-pool size, and output locations. Their default paths are reviewer-side examples such as `data/ML1M` and `outputs/...`. Reviewers can either pass paths explicitly through command-line arguments or set environment variables such as `CFE_POPCAL_ML1M_DATA_DIR`, `CFE_POPCAL_AMAZON_DATA_DIR`, `CFE_POPCAL_YELP_INPUT_DIR`, and `CFE_POPCAL_OUTPUT_ROOT`.
 
 ## Minimal Python Environment
 

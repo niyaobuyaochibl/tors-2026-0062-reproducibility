@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -30,8 +31,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 
 
-DEFAULT_INPUT = Path("/root/autodl-tmp/projects_archive/MGPrompt-CDR/data/raw/ml-1m/ratings.dat")
-DEFAULT_OUTPUT = Path("/root/autodl-tmp/shared-domain/ml1m")
+DEFAULT_INPUT = Path(os.environ.get("CFE_POPCAL_ML1M_RATINGS", "data/raw/ml-1m/ratings.dat"))
+DEFAULT_OUTPUT = Path(os.environ.get("CFE_POPCAL_ML1M_SHARED_DIR", "data/processed/ml1m"))
 
 
 def parse_args() -> argparse.Namespace:

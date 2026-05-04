@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -12,8 +13,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-DEFAULT_INPUT_DIR = Path("/root/autodl-tmp/amazon-books-subset")
-DEFAULT_OUTPUT_DIR = Path("/root/autodl-tmp/amazon-books-dense-v1")
+DEFAULT_INPUT_DIR = Path(os.environ.get("CFE_POPCAL_AMAZON_INPUT_DIR", "data/raw/amazon-books-subset"))
+DEFAULT_OUTPUT_DIR = Path(os.environ.get("CFE_POPCAL_AMAZON_OUTPUT_DIR", "data/processed/amazon-books-dense-v1"))
 
 
 def parse_args() -> argparse.Namespace:

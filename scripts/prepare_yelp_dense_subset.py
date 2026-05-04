@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 import numpy as np
@@ -12,8 +13,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-DEFAULT_INPUT_DIR = Path("/root/autodl-tmp/yelp-processed")
-DEFAULT_OUTPUT_DIR = Path("/root/autodl-tmp/yelp-dense-v1-u3000-i1500")
+DEFAULT_INPUT_DIR = Path(os.environ.get("CFE_POPCAL_YELP_INPUT_DIR", "data/raw/yelp-processed"))
+DEFAULT_OUTPUT_DIR = Path(os.environ.get("CFE_POPCAL_YELP_OUTPUT_DIR", "data/processed/yelp-dense-v1-u3000-i1500"))
 
 
 def parse_args() -> argparse.Namespace:

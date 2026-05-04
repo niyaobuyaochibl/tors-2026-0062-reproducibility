@@ -8,7 +8,7 @@ We have prepared reviewer-facing reproducibility materials for manuscript TORS-2
 
 The materials are available here:
 
-[INSERT SHAREABLE LINK HERE]
+https://github.com/niyaobuyaochibl/tors-2026-0062-reproducibility
 
 The raw ML1M, Amazon Books, and Yelp datasets are not redistributed in the package, but the package includes dataset-access notes and the scripts/outputs needed to audit the reported tables and figures. Please let us know if you would like us to provide the materials in another format.
 
